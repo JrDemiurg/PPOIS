@@ -17,7 +17,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace Project2Test
 {
-	TEST_CLASS(Project2Test)
+	TEST_CLASS(SportClubTest)
 	{
 	public:
 		
