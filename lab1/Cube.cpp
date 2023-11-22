@@ -1,12 +1,5 @@
 #include "Cube.h"
 
-Cube::Cube() {
-	/*char path[FILENAME_MAX];
-	_getcwd(path, sizeof(path));
-	path_ = path;
-	path_ = path_ + "\\save.txt";
-	cout << path_ << endl;*/
-}
 void Cube::show() {
 	for (int i = 0; i < 3; i++)
 	{
@@ -161,7 +154,7 @@ void Cube::randomTurns() {
 	}
 }
 
-bool Cube::check() {
+bool Cube::isComplited() {
 	for (int i = 0; i < 3; i++)
 	{
 		for (int j = 0; j < 3; j++)
@@ -208,11 +201,13 @@ void Cube::write(Cube cube) {
 	}
 	fout.close();
 }
-void Cube::read(Cube& cube, int choise) {
-	read(cube, choise, "save.txt");
+void Cube::read(Cube& cube) {
+	read(cube, "save.txt");
 }
 
-void Cube::read(Cube& cube, int choise,string path) {
+
+void Cube::read(Cube& cube, string path) {
+	int choise;
 	ifstream fin;
 	fin.open(path);
 
@@ -229,11 +224,8 @@ void Cube::read(Cube& cube, int choise,string path) {
 			cout << i << endl;
 			show();
 		}
-		do
-		{
-		} while (choise < 1 || choise >= i);
 		ifstream fin;
-		//cin >> choise;
+		cin >> choise;
 		fin.open(path);
 		for (int i = 0; i < choise; i++)
 		{
