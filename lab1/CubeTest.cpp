@@ -17,18 +17,21 @@ namespace CubeTest
 			cube.turn(4);
 			cube.turn(1);
 			cube.write(cube);
-			cube.read(cube,1, "..\x64\Debug\save.txt");
+			std::istringstream input("1\n");
+			std::streambuf* oldCin = std::cin.rdbuf();
+			std::cin.rdbuf(input.rdbuf());
+			cube.read(cube, "..\x64\Debug\save.txt");
 			cube.turn(11);
 			cube.turn(44);
 			cube.turn(33);
 			cube.turn(3);
-			Assert::IsTrue(cube.check());
+			Assert::IsTrue(cube.isComplited());
 		}
 		TEST_METHOD(TestMethod2)
 		{
 			Cube cube;
 			cube.randomTurns();
-			Assert::IsFalse(cube.check());
+			Assert::IsFalse(cube.isComplited());
 		}
 	};
 }
