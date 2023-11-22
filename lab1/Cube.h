@@ -5,6 +5,7 @@
 using namespace std;
 
 class Cube {
+//r -red, b - blue, w - wight, g - green, y - yeloow, o - orange
 //  r
 // bwgy
 //  o
@@ -17,7 +18,6 @@ class Cube {
 	string path_ = "save.txt";
 
 public:
-	Cube();
 
 	void show();
 
@@ -27,11 +27,11 @@ public:
 
 	void randomTurns();
 
-	bool check();
+	bool isComplited();
 
 	void write(Cube cube);
 
-	void read(Cube& cube, int choise);
+	void read(Cube& cube);
 
-	void read(Cube& cube, int choise, string path);
+	void read(Cube& cube, string path);
 };

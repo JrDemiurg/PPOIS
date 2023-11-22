@@ -18,7 +18,7 @@ int main() {
 		switch (choise)
 		{
 		case 7:
-			cube.check();
+			cube.isComplited();
 			break;
 		case 8:
 			cube.randomTurns();
@@ -27,8 +27,7 @@ int main() {
 			cube.write(cube);
 			break;
 		case 10:
-			cin >> choise;
-			cube.read(cube,choise);
+			cube.read(cube);
 			break;
 		default:
 			cube.turn(choise);
