@@ -1,5 +1,5 @@
 #include "Loader.h"
-Loader::Loader(Warehouse* warehouse, string name, int workerID, int balance, int salary) : InterfaceWorker(name, workerID, balance,
+Loader::Loader(Warehouse* warehouse, string name, int workerID, int balance, int salary) : Worker(name, workerID, balance,
 	salary), warehouse(warehouse) {}
 
 void Loader::performWork( Product* product)

@@ -1,7 +1,7 @@
 #pragma once
-#include "InterfaceWorker.h"
+#include "Worker.h"
 #include "Warehouse.h"
-class Loader : public InterfaceWorker {
+class Loader : public Worker {
 public:
 	Loader(Warehouse* warehouse,string name, int workerID, int balance, int salary);
 	void performWork( Product* product);

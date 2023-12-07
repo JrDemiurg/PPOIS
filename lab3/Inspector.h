@@ -1,7 +1,7 @@
 #pragma once
-#include "InterfaceWorker.h"
+#include "Worker.h"
 #include "Product.h"
-class Inspector : public InterfaceWorker {
+class Inspector : public Worker {
 public:
 	Inspector( string name, int workerID, int balance, int salary);
 	bool performWork(Product* product);

@@ -1,6 +1,6 @@
 #include "ProductionLineWorker.h"
 
-ProductionLineWorker::ProductionLineWorker(string name, int workerID, int balance, int salary): InterfaceWorker(name, workerID, balance,
+ProductionLineWorker::ProductionLineWorker(string name, int workerID, int balance, int salary): Worker(name, workerID, balance,
 	salary){}
 
 Product* ProductionLineWorker::performWork(string productName, int productPrice)

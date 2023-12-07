@@ -2,7 +2,7 @@
 #include "CppUnitTest.h"
 #include "../Project3/Factory.h"
 #include "../Project3/Inspector.h"
-#include "../Project3/InterfaceWorker.h"
+#include "../Project3/Worker.h"
 #include "../Project3/Loader.h"
 #include "../Project3/Manager.h"
 #include "../Project3/Product.h"

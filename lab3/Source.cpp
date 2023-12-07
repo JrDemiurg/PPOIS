@@ -1,4 +1,4 @@
-#include "InterfaceWorker.h"
+#include "Worker.h"
 #include "Factory.h"
 #include "ProductionLine.h"
 #include "ProductionLineWorker.h"
